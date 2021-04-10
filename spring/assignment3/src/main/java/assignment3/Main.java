@@ -13,7 +13,7 @@ public class Main {
 		double bal=b1.getBalance(1111);
 		System.out.println("Initial balance: "+bal);
 		double value=b1.deposit(1111, 500);
-		System.out.println("After depositing 500 :"+value);
+		System.out.println("After the depositing 500 :"+value);
 		double bala=b1.getBalance(1111);
 		System.out.println("Balance: "+bala);
 		double value1=b1.deposit(1111, 1500);
