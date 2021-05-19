@@ -1,0 +1,46 @@
+package com.farmermanagementdemo1.tryNew;
+
+import lombok.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class FarmerDetails {
+    private String name;
+    private String contactNumber;
+    private String email;
+    private String address;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public FarmerDetails(String name, String contactNumber, String email, String address) {
+		super();
+		this.name = name;
+		this.contactNumber = contactNumber;
+		this.email = email;
+		this.address = address;
+		
+	}
+	public FarmerDetails() {
+}}

@@ -1,0 +1,21 @@
+server:
+  port: 8100
+
+zuul:
+  routes:
+    account-info-service:
+      url: http://localhost:8084
+    crop-info-service:
+    url: http://localhost:8082
+    dealer-info-service:
+      url: http://localhost:8083
+    farmer-info-service:
+      url: http://localhost:8081
+  # exclude Authorization from sensitive headers
+  sensitiveHeaders: Cookie,Set-Cookie
+  ignoredServices: '*'
+
+
+spring:
+  application:
+    name: api-gateway-service
