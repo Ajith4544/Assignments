@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="customer" class="assignment1.customer">
+    <property name="address" ref="address1"/>
+    <property name="customerId" value="1" />
+    </bean>
+    
+    <bean id="address1" class="assignment1.Address">
+    <property name="street" value="A" />
+    <property name="city" value="A" />
+    <property name="state" value="A" />
+    <property name="zip" value="A" />
+    <property name="country" value="A" />
+    </bean>
+
+</beans>
